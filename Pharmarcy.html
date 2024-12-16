@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicines - Great Health Hospital</title>
+    <link rel="stylesheet" href="Last.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="Favigon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Favigon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Favigon/favicon-16x16.png">
+    <link rel="manifest" href="Favigon/site.webmanifest">
+    <script src="Pharmacy.js" defer></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="top-bar">
+            <div class="logo">
+                <img src="images/large.png" alt="Great Health Hospital Logo">
+            </div>
+            <div class="contact-info">
+                <p><strong>Phone:</strong> (555) 987-6543</p>
+                <p><strong>Email:</strong> info@GreatHealthHospital.com</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./About.html">About Us</a></li>
+                <li><a href="./Pharmarcy.html">Services</a></li>
+                <li><a href="./Doctor.html">Doctors</a></li>
+                <li><a href="./Appointment.html">Appointments</a></li>
+                <li><a href="./Pharmarcy.html">Pharmacy</a></li>
+                <li><a href="./Contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Pharmacy Description Section -->
+    <section id="about-pharmacy">
+        <div class="container">
+            <h2>About Our Pharmacy</h2>
+            <img src="images/pharmacy.jpg" alt="Pharmacy Image" class="pharmacy-image">
+            <p>At our pharmacy, we are committed to providing the highest quality of healthcare products and services. Our knowledgeable staff is here to offer personalized advice and ensure you receive the best care possible. Whether you're looking for over-the-counter medications, prescription refills, or health advice, we are here to help you every step of the way.</p>
+        </div>
+    </section>
+
+     <!-- Open Times Section -->
+     <section id="open-times">
+        <div class="container">
+            <h2>Our Opening Hours</h2>
+            <table>
+                <tr>
+                    <td>Monday</td>
+                    <td>9:00 AM - 6:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>9:00 AM - 6:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>9:00 AM - 6:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>9:00 AM - 6:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>9:00 AM - 6:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>10:00 AM - 4:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>Closed</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- Medicine Categories -->
+    <section id="medicine-list">
+        <h2>Our Medicines</h2>
+
+        <!-- Analgesics -->
+        <div class="category">
+            <h3>1. Analgesics</h3>
+            <div class="medicine">
+                <p>Paracetamol - $5</p>
+                <img src="images/Paracetamol.jpg">
+                <div class="quantity-control">
+                    <button class="decrease">-</button>
+                    <input type="number" class="quantity" value="1" min="1">
+                    <button class="increase">+</button>
+                </div>
+                <button class="add-to-cart"  data-id="paracetamol" data-name="Paracetamol" data-price="5">Add to Cart</button>
+            </div>
+            <div class="medicine">
+                <p>Ibuprofen - $8</p>
+                <img src="images/Ibuprofen.jpg"><div class="quantity-control">
+                    <button class="decrease">-</button>
+                    <input type="number" class="quantity" value="1" min="1">
+                    <button class="increase">+</button>
+                </div>
+                <button class="add-to-cart"  data-id="ibuprofen" data-name="Ibuprofen" data-price="8">Add to Cart</button>
+            </div>
+            <div class="medicine">
+                <p>Aspirin - $6</p>
+                <img src="images/Aspirin.jpg">
+                <div class="quantity-control">
+                    <button class="decrease">-</button>
+                    <input type="number" class="quantity" value="1" min="1">
+                    <button class="increase">+</button>
+                </div>
+                <button class="add-to-cart"  data-id="aspirin" data-name="Aspirin" data-price="6">Add to Cart</button>
+            </div>
+            <div class="medicine">
+                <p>Naproxen - $7</p>
+                <img src="images/Naproxen.jpg">
+                <div class="quantity-control">
+                    <button class="decrease">-</button>
+                    <input type="number" class="quantity" value="1" min="1">
+                    <button class="increase">+</button>
+                </div>
+                <button class="add-to-cart"  data-id="naproxen" data-name="Naproxen" data-price="7">Add to Cart</button>
+            </div>
+            <div class="medicine">
+                <p>Diclofenac - $9</p>
+                <img src="images/Diclofenac.jpg">
+                <div class="quantity-control">
+                    <button class="decrease">-</button>
+                    <input type="number" class="quantity" value="1" min="1">
+                    <button class="increase">+</button>
+                </div>
+                <button class="add-to-cart"  data-id="diclofenac" data-name="Diclofenac" data-price="9">Add to Cart</button>
+            </div>
+            <div class="medicine">
+                <p>Codeine - $12</p>
+                <img src="images/Codeine1.jpg">
+                <div class="quantity-control">
+                    <button class="decrease">-</button>
+                    <input type="number" class="quantity" value="1" min="1">
+                    <button class="increase">+</button>
+                </div>
+                <button class="add-to-cart"  data-id="codeine" data-name="Codeine" data-price="12">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Antibiotics -->
+        <div class="category">
+            <h3>2. Antibiotics</h3>
+            <div class="medicine">
+                <p>Amoxicillin - $10</p>
+                <img src="images/Amoxicillin.jpg">
+                <div class="quantity-control">
+                    <button class="decrease">-</button>
+                    <input type="number" class="quantity" value="1" min="1">
+                    <button class="increase">+</button>
+                </div>
+                <button class="add-to-cart"  data-id="amoxicillin" data-name="Amoxicillin" data-price="10">Add to Cart</button>
+            </div>
+            <div class="medicine">
+                <p>Azithromycin - $12</p>
+                <img src="images/Azithromycin.jpg">
+                <div class="quantity-control">
+                    <button class="decrease">-</button>
+                    <input type="number" class="quantity" value="1" min="1">
+                    <button class="increase">+</button>
+                </div>
+                <button class="add-to-cart"  data-id="azithromycin" data-name="Azithromycin" data-price="12">Add to Cart</button>
+            </div>
+            <div class="medicine">
+                <p>Ciprofloxacin - $11</p>
+                <img src="images/Ciprofloxacin.jpg">
+                <div class="quantity-control">
+                    <button class="decrease">-</button>
+                    <input type="number" class="quantity" value="1" min="1">
+                    <button class="increase">+</button>
+                </div>
+                <button class="add-to-cart"  data-id="ciprofloxacin" data-name="Ciprofloxacin" data-price="11">Add to Cart</button>
+            </div>
+            <div class="medicine">
+                <p>Clindamycin - $9</p>
+                <img src="images/Clindamycin.jpg">
+                <div class="quantity-control">
+                    <button class="decrease">-</button>
+                    <input type="number" class="quantity" value="1" min="1">
+                    <button class="increase">+</button>
+                </div>
+                <button class="add-to-cart"  data-id="clindamycin" data-name="Clindamycin" data-price="9">Add to Cart</button>
+            </div>
+            <div class="medicine">
+                <p>Doxycycline - $8</p>
+                <img src="images/Doxycycline.jpg">
+                <div class="quantity-control">
+                    <button class="decrease">-</button>
+                    <input type="number" class="quantity" value="1" min="1">
+                    <button class="increase">+</button>
+                </div>
+                <button class="add-to-cart"  data-id="doxycycline" data-name="Doxycycline" data-price="8">Add to Cart</button>
+            </div>
+            <div class="medicine">
+                <p>Metronidazole - $7</p>
+                <img src="images/Metronidazole.jpg">
+                <div class="quantity-control">
+                    <button class="decrease">-</button>
+                    <input type="number" class="quantity" value="1" min="1">
+                    <button class="increase">+</button>
+                </div>
+                <button class="add-to-cart"  data-id="metronidazole" data-name="Metronidazole" data-price="7">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Antidepressants -->
+        <div class="category">
+            <h3>3. Antidepressants</h3>
+            <div class="medicine">
+                <p>Sertraline - $15</p>
+                <img src="images/Sertraline.jpg">
+                <div class="quantity-control">
+                    <button class="decrease">-</button>
+                    <input type="number" class="quantity" value="1" min="1">
+                    <button class="increase">+</button>
+                </div>
+                <button class="add-to-cart"  data-id="sertraline" data-name="Sertraline" data-price="15">Add to Cart</button>
+            </div>
+            <div class="medicine">
+                <p>Fluoxetine - $14</p>
+                <img src="images/Fluoxetine.jpg">
+                <div class="quantity-control">
+                    <button class="decrease">-</button>
+                    <input type="number" class="quantity" value="1" min="1">
+                    <button class="increase">+</button>
+                </div>
+                <button class="add-to-cart"  data-id="fluoxetine" data-name="Fluoxetine" data-price="14">Add to Cart</button>
+            </div>
+            <div class="medicine">
+                <p>Venlafaxine - $18</p>
+                <img src="images/Venlafaxine.jpg">
+                <div class="quantity-control">
+                    <button class="decrease">-</button>
+                    <input type="number" class="quantity" value="1" min="1">
+                    <button class="increase">+</button>
+                </div>
+                <button class="add-to-cart"  data-id="venlafaxine" data-name="Venlafaxine" data-price="18">Add to Cart</button>
+            </div>
+            <div class="medicine">
+                <p>Citalopram - $13</p>
+                <img src="images/Citalopram.jpg">
+                <div class="quantity-control">
+                    <button class="decrease">-</button>
+                    <input type="number" class="quantity" value="1" min="1">
+                    <button class="increase">+</button>
+                </div>
+                <button class="add-to-cart"  data-id="citalopram" data-name="Citalopram" data-price="13">Add to Cart</button>
+            </div>
+            <div class="medicine">
+                <p>Paroxetine - $16</p>
+                <img src="images/Paroxetine.jpg">
+                <div class="quantity-control">
+                    <button class="decrease">-</button>
+                    <input type="number" class="quantity" value="1" min="1">
+                    <button class="increase">+</button>
+                </div>
+                <button class="add-to-cart"  data-id="paroxetine" data-name="Paroxetine" data-price="16">Add to Cart</button>
+            </div>
+            <div class="medicine">
+                <p>Amitriptyline - $12</p>
+                <img src="images/Amitriptyline.jpg">
+                <div class="quantity-control">
+                    <button class="decrease">-</button>
+                    <input type="number" class="quantity" value="1" min="1">
+                    <button class="increase">+</button>
+                </div>
+                <button class="add-to-cart"  data-id="amitriptyline" data-name="Amitriptyline" data-price="12">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Antihistamines -->
+        <div class="category">
+            <h3>4. Antihistamines</h3>
+            <div class="medicine">
+                <p>Loratadine - $5</p>
+                <img src="images/Loratadine.png">
+                <div class="quantity-control">
+                    <button class="decrease">-</button>
+                    <input type="number" class="quantity" value="1" min="1">
+                    <button class="increase">+</button>
+                </div>
+                <button class="add-to-cart"  data-id="loratadine" data-name="Loratadine" data-price="5">Add to Cart</button>
+            </div>
+            <div class="medicine">
+                <p>Cetirizine - $4</p>
+                <img src="images/Cetirizine.jpg">
+                <div class="quantity-control">
+                    <button class="decrease">-</button>
+                    <input type="number" class="quantity" value="1" min="1">
+                    <button class="increase">+</button>
+                </div>
+                <button class="add-to-cart"  data-id="cetirizine" data-name="Cetirizine" data-price="4">Add to Cart</button>
+            </div>
+            <div class="medicine">
+                <p>Fexofenadine - $6</p>
+                <img src="images/Fexofenadine.jpg">
+                <div class="quantity-control">
+                    <button class="decrease">-</button>
+                    <input type="number" class="quantity" value="1" min="1">
+                    <button class="increase">+</button>
+                </div>
+                <button class="add-to-cart"  data-id="fexofenadine" data-name="Fexofenadine" data-price="6">Add to Cart</button>
+            </div>
+            <div class="medicine">
+                <p>Diphenhydramine - $3</p>
+                <img src="images/Diphenhydramine.jpg">
+                <div class="quantity-control">
+                    <button class="decrease">-</button>
+                    <input type="number" class="quantity" value="1" min="1">
+                    <button class="increase">+</button>
+                </div>
+                <button class="add-to-cart"  data-id="diphenhydramine" data-name="Diphenhydramine" data-price="3">Add to Cart</button>
+            </div>
+            <div class="medicine">
+                <p>Desloratadine - $7</p>
+                <img src="images/Desloratadine.jpg">
+                <div class="quantity-control">
+                    <button class="decrease">-</button>
+                    <input type="number" class="quantity" value="1" min="1">
+                    <button class="increase">+</button>
+                </div>
+                <button class="add-to-cart"  data-id="desloratadine" data-name="Desloratadine" data-price="7">Add to Cart</button>
+            </div>
+            <div class="medicine">
+                <p>Levocetirizine - $5</p>
+                <img src="images/Levocetirizine.jpg">
+                <div class="quantity-control">
+                    <button class="decrease">-</button>
+                    <input type="number" class="quantity" value="1" min="1">
+                    <button class="increase">+</button>
+                </div>
+                <button class="add-to-cart"  data-id="levocetirizine" data-name="Levocetirizine" data-price="5">Add to Cart</button>
+
+    
+        </div>
+
+        <!-- Antihypertensives -->
+        <div class="category">
+            <h3>5. Antihypertensives</h3>
+            <div class="medicine">
+                <p>Amlodipine - $10</p>
+                <img src="images/Amlodipine.jpg">
+                <div class="quantity-control">
+                    <button class="decrease">-</button>
+                    <input type="number" class="quantity" value="1" min="1">
+                    <button class="increase">+</button>
+                </div>
+                <button class="add-to-cart"  data-id="amlodipine" data-name="Amlodipine" data-price="10">Add to Cart</button>
+            </div>
+            <div class="medicine">
+                <p>Lisinopril - $9</p>
+                <img src="images/Lisinopril.jpg">
+                <div class="quantity-control">
+                    <button class="decrease">-</button>
+                    <input type="number" class="quantity" value="1" min="1">
+                    <button class="increase">+</button>
+                </div>
+                <button class="add-to-cart"  data-id="lisinopril" data-name="Lisinopril" data-price="9">Add to Cart</button>
+            </div>
+            <div class="medicine">
+                <p>Losartan - $8</p>
+                <img src="images/Losartan.jpg">
+                <div class="quantity-control">
+                    <button class="decrease">-</button>
+                    <input type="number" class="quantity" value="1" min="1">
+                    <button class="increase">+</button>
+                </div>
+                <button class="add-to-cart"  data-id="losartan" data-name="Losartan" data-price="8">Add to Cart</button>
+            </div>
+            <div class="medicine">
+                <p>Hydrochlorothiazide - $7</p>
+                <img src="images/Hydrochlorothiazide.jpg">
+                <div class="quantity-control">
+                    <button class="decrease">-</button>
+                    <input type="number" class="quantity" value="1" min="1">
+                    <button class="increase">+</button>
+                </div>
+                <button class="add-to-cart"  data-id="hydrochlorothiazide" data-name="Hydrochlorothiazide" data-price="7">Add to Cart</button>
+            </div>
+            <div class="medicine">
+                <p>Metoprolol - $10</p>
+                <img src="images/Metoprolol.jpg">
+                <div class="quantity-control">
+                    <button class="decrease">-</button>
+                    <input type="number" class="quantity" value="1" min="1">
+                    <button class="increase">+</button>
+                </div>
+                <button class="add-to-cart" data-id="metoprolol" data-name="Metoprolol" data-price="10">Add to Cart</button>
+            </div>
+            <div class="medicine">
+                <p>Enalapril - $9</p>
+                <img src="images/Enalapril.jpg">
+                <div class="quantity-control">
+                    <button class="decrease">-</button>
+                    <input type="number" class="quantity" value="1" min="1">
+                    <button class="increase">+</button>
+                </div>
+                <button class="add-to-cart" data-id="enalapril" data-name="Enalapril" data-price="9">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    
+   <!-- Cart Section -->
+<section id="cart">
+    <h2>Your Cart</h2>
+    <table id="cart-table">
+        <thead>
+            <tr>
+                <th>Medicine</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="cart-table-body"></tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3"><strong>Total Price:</strong></td>
+                <td id="total-price">$0</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+    <button id="buy-now">Buy Now</button>
+    <button id="clear-cart">Clear Cart</button>
+
+</section>
+<br><br>
+
+<!-- Footer Section: Contains about info, quick links, and contact details -->
+<footer>
+    <div class="footer-container">
+        <!-- About Section in Footer -->
+        <div class="footer-about">
+            <h4>About Great Health Hospital</h4>
+            <p>At Great Health Hospital, we are dedicated to providing exceptional healthcare services with state-of-the-art facilities and compassionate care. Our experienced medical team ensures the best outcomes for our patients in every department.</p>
+        </div>
+   <!-- Quick Links Section in Footer -->     
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./About.html">About Us</a></li>
+                <li><a href="./Service.html">Services</a></li>
+                <li><a href="./Appointment.html">Appointments</a></li>
+                <li><a href="./Pharmarcy.html">Pharmacy</a></li>
+                <li><a href="./Contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+      <!-- Contact Details in Footer -->   
+        <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p>Phone: (555) 987-6543</p>
+            <p>Email: info@GreatHealthHospital.com</p>
+            <p>Address: 456 Getwell Avenue, Colombo</p>
+        </div>
+    </div>
+     <!-- Bottom Footer with Copyright Information -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 Great Health Hospital. All rights reserved.</p>
+    </div>
+</footer>
+
+
+</body>
+
+</html>

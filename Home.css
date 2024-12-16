@@ -1,0 +1,391 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+/* Center-align headings */
+h1, h2, h3 {
+    text-align: center;
+}
+
+/* Container styling for general layout */
+.container {
+    width: 90%;
+    margin: auto;
+}
+/* Section padding */
+section {
+    padding: 40px 20px;
+}
+/* Box styling with border, shadow, and padding */
+.box {
+    position: relative;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+}
+/* Hospital image container styling */
+.Hospital-Image {
+    position: relative;
+    width: 100%;
+    height: auto; 
+    max-height: 400px; 
+    overflow: hidden;
+}
+/* Styling for images within the hospital image container */
+.Hospital-Image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+    border-radius: 10px;
+}
+/* Facility details list styling */
+.facility-details ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+/* Overlay text styling for positioned text on images */
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background-color: rgba(171, 37, 37, 0.6);
+    padding: 20px;
+    border-radius: 80px;
+}
+/* Heading styling inside overlay text */
+.overlay-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+/* Location section styling */
+#location {
+    text-align: center;
+    padding: 40px 20px; 
+}
+/* Box styling for the location map */
+.location-box {
+    display: inline-block;
+    width: 80%; 
+    max-width: 800px; 
+    border: 3px solid #333;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; 
+}
+
+/* Styling for the map container */
+.location-map {
+    position: relative;
+    width: 100%;
+    height: 300px; 
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* Image styling inside the map container */
+.location-map img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px; 
+}
+
+/* Staff container with flexbox for layout */
+.staff-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.staff-card {
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+}
+
+.staff-card img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+/* Services container with flexbox for layout */
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+/* Individual service card styling */
+.service-card {
+    width: 20%;
+    margin-bottom: 20px;
+}
+
+.service-card img {
+    max-width: 100%;
+}
+
+
+/* Form styling with flexbox for layout */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Hover effect for form buttons */
+form button:hover {
+    background-color: #218838;
+}
+/* Director info box styling */
+.director-info {
+    text-align: center;
+    margin-top: 20px;
+    border: 2px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%; 
+    max-width: 600px;
+    margin: 20px auto; 
+}
+
+/* Director image styling inside the info box */
+.director-info img {
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%; 
+    margin-bottom: 10px;
+}
+
+/* Paragraph styling inside the director info box */
+.director-info p {
+    font-size: 1rem;
+    margin-top: 10px; 
+}
+
+footer {
+    background-color: #003366;
+    color: #ffffff;
+    padding: 30px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Individual sections within the footer */
+.footer-about,
+.footer-links,
+.footer-contact {
+    flex-basis: 30%;
+    margin-bottom: 20px;
+}
+/* Footer about section paragraph styling */
+.footer-about p {
+    line-height: 1.6;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+/* Link styling inside footer links */
+.footer-links ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #00ccff;
+}
+
+.footer-contact p {
+    line-height: 1.6;
+}
+
+.footer-bottom {
+    text-align: center;
+    background-color: #002244;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Header styling with background color and padding */
+header {
+    background-color: #00bbb3;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    max-height: 110px;
+}
+
+.contact-info {
+    text-align: right;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+nav {
+    background-color: #00bbb3;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #3a3a97;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-about,
+    .footer-links,
+    .footer-contact {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .staff-card, .service-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+.facility-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+
+.facility-details {
+    flex: 1;
+    padding: 20px;
+}
+
+.hospital-image {
+    flex: 1;
+    text-align: center; 
+}
+
+.hospital-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; 
+}
+
+.box {
+    border: 2px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+@media screen and (max-width: 768px) {
+    .facility-container {
+        flex-direction: column; 
+    }
+}

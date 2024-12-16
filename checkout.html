@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicines - Great Health Hospital</title>
+    <link rel="stylesheet" href="Last.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="Favigon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Favigon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Favigon/favicon-16x16.png">
+    <link rel="manifest" href="Favigon/site.webmanifest">
+    <script src="checkout.js" defer></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="top-bar">
+            <div class="logo">
+                <img src="images/large.png" alt="Great Health Hospital Logo">
+            </div>
+            <div class="contact-info">
+                <p><strong>Phone:</strong> (555) 987-6543</p>
+                <p><strong>Email:</strong> info@GreatHealthHospital.com</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./About.html">About Us</a></li>
+                <li><a href="./Pharmarcy.html">Services</a></li>
+                <li><a href="./Doctor.html">Doctors</a></li>
+                <li><a href="./Appointment.html">Appointments</a></li>
+                <li><a href="./Pharmarcy.html">Pharmacy</a></li>
+                <li><a href="./Contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="order-summary">
+        <h2>Order Summary</h2>
+        <table id="order-table">
+            <thead>
+                <tr>
+                    <th>Medicine</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="order-summary-body"></tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3"><strong>Total Price:</strong></td>
+                    <td id="order-total-price">$0</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <section id="personal-details">
+        <h2>Your Details</h2>
+        <form id="checkout-form">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" required>
+            <label for="address">Delivery Address:</label>
+            <textarea id="address" required></textarea>
+            <label for="postal-code">Postal Code:</label>
+            <input type="text" id="postal-code" required>
+            <label for="phone-number">Phone Number:</label>
+            <input type="tel" id="phone-number" required>
+            <label for="payment-method">Payment Method:</label>
+            <select id="payment-method" required>
+                <option value="credit-card">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="bank-transfer">Bank Transfer</option>
+                <option value="Cash-on-delivery">Cash on delivery</option>
+
+            </select>
+            <button type="submit" id="pay-button">Pay</button>
+            <button id="add-to-favourites">Add to Favourites</button>
+            <button id="apply-favourites">Apply Favourites</button>
+
+        </form>
+    </section>
+
+    <!-- Footer Section: Contains about info, quick links, and contact details -->
+<footer>
+    <div class="footer-container">
+        <!-- About Section in Footer -->
+        <div class="footer-about">
+            <h4>About Great Health Hospital</h4>
+            <p>At Great Health Hospital, we are dedicated to providing exceptional healthcare services with state-of-the-art facilities and compassionate care. Our experienced medical team ensures the best outcomes for our patients in every department.</p>
+        </div>
+   <!-- Quick Links Section in Footer -->     
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./About.html">About Us</a></li>
+                <li><a href="./Service.html">Services</a></li>
+                <li><a href="./Appointment.html">Appointments</a></li>
+                <li><a href="./Pharmarcy.html">Pharmacy</a></li>
+                <li><a href="./Contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+      <!-- Contact Details in Footer -->   
+        <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p>Phone: (555) 987-6543</p>
+            <p>Email: info@GreatHealthHospital.com</p>
+            <p>Address: 456 Getwell Avenue, Colombo</p>
+        </div>
+    </div>
+     <!-- Bottom Footer with Copyright Information -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 Great Health Hospital. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>

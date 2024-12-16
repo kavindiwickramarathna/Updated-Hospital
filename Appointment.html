@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <!-- Meta tags for character set and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Great Health Hospital - Home</title>
+    <link rel="stylesheet" href="./Style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="Favigon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Favigon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Favigon/favicon-16x16.png">
+    <link rel="manifest" href="Favigon/site.webmanifest">
+    
+</head>
+<body>
+ <!-- Header Section: Contains logo, contact info, and navigation menu -->
+    <header>
+        <div class="top-bar">
+            <div class="logo">
+                <img src="images/large.png" alt="Great Health Hospital Logo">
+            </div>
+            <div class="contact-info">
+                <p><strong>Phone:</strong> (555) 987-6543</p>
+                <p><strong>Email:</strong> info@GreatHealthHospital.com</p>
+            </div>
+        </div>
+         <!-- Header Section: Contains logo, contact info, and navigation menu -->
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./About.html">About Us</a></li>
+                <li><a href="./Service.html">Services</a></li>
+                <li><a href="./Doctor.html">Doctors</a></li>
+                <li><a href="#appointments">Appointments</a></li>
+                <li><a href="./Pharmarcy.html">Pharmacy</a></li>
+                <li><a href="./Contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+ <!-- Appointment Form Section -->
+    <section id="appointment-form" class="box">
+        <h2>Book an Appointment</h2>
+        <form>
+            
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            
+            <label for="appointment-type">Select Appointment Type:</label>
+            <select id="appointment-type" name="appointment-type" required>
+                <option value="" disabled selected>Select type</option>
+                <option value="doctor">Doctor Appointment</option>
+                <option value="service">Service Appointment</option>
+            </select>
+
+     <!-- Conditional dropdown for doctor selection, hidden by default -->        
+            <div id="doctor-selection" style="display:none;">
+                <label for="doctor">Select Doctor:</label>
+                <select id="doctor" name="doctor">
+                    <option value="doctor1">Dr. John Smith (Cardiologist)</option>
+                    <option value="doctor2">Dr. Sarah Lee (Pediatrician)</option>
+                    <option value="doctor3">Dr. Henry Davis (Neurologist)</option>
+                    
+                </select>
+            </div>
+<!-- Conditional dropdown for service selection, hidden by default -->
+            <div id="service-selection" style="display:none;">
+                <label for="service">Select Service:</label>
+                <select id="service" name="service">
+                    <option value="service1">Dental Care</option>
+                    <option value="service2">Eye Check-up</option>
+                    <option value="service3">Physiotherapy</option>
+                   
+                </select>
+            </div>
+ <!-- Input fields for selecting date and time of the appointment -->
+            <label for="appointment-date">Preferred Date:</label>
+            <input type="date" id="appointment-date" name="appointment-date" required>
+
+            <label for="appointment-time">Preferred Time:</label>
+            <input type="time" id="appointment-time" name="appointment-time" required>
+
+      <!-- Text area for additional comments -->       
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Any specific requests..."></textarea>
+      <!-- Button to submit the form -->
+            <button type="submit">Book Appointment</button>
+        </form>
+    </section>
+ <!-- Footer Section: Contains about info, quick links, and contact details -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h4>About Great Health Hospital</h4>
+                <p>At Great Health Hospital, we are dedicated to providing exceptional healthcare services with state-of-the-art facilities and compassionate care. Our experienced medical team ensures the best outcomes for our patients in every department.</p>
+            </div>
+    <!-- Quick Links Section in Footer -->           
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./About.html">About Us</a></li>
+                    <li><a href="./Service.html">Services</a></li>
+                    <li><a href="./Appointment.html">Appointments</a></li>
+                    <li><a href="./Pharmarcy.html">Pharmacy</a></li>
+                    <li><a href="./Contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+      <!-- Contact Details in Footer -->       
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Phone: (555) 987-6543</p>
+                <p>Email: info@GreatHealthHospital.com</p>
+                <p>Address: 456 Getwell Avenue, Colombo</p>
+            </div>
+        </div>
+     <!-- Bottom Footer with Copyright Information -->     
+        <div class="footer-bottom">
+            <p>&copy; 2024 Great Health Hospital. All rights reserved.</p>
+        </div>
+    </footer>
+    
+
+</body>
+</html>
